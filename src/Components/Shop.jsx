@@ -3,10 +3,16 @@ import {useEffect, useState} from "react";
 import {API_KEY, API_URL} from "../config";
 import Loading from "./Loading";
 import GoodsList from "./GoodsList";
+import Cart from "./Cart";
 
 const Shop = () => {
     const [goods, setGoods] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [order, setOrder] = useState([]);
+
+   const addToCart = (id) => {
+      setOrder([...order, ...goods.filter(item => item.id === id)])
+   }
 
     useEffect(() => {
         fetch(API_URL, {
@@ -21,7 +27,8 @@ const Shop = () => {
 
     return (
         <main className="container content">
-            {loading ? <Loading /> : <GoodsList goods={goods}/>};
+            <Cart quantity={order.length}/>
+            {loading ? <Loading /> : <GoodsList goods={goods} addToCart={addToCart}/>};
         </main>
     );
 };
