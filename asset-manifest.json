@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.168c7b33.css",
-    "main.js": "/static/js/main.b50ca462.js",
-    "index.html": "/index.html",
-    "main.168c7b33.css.map": "/static/css/main.168c7b33.css.map",
-    "main.b50ca462.js.map": "/static/js/main.b50ca462.js.map"
+    "main.css": "/fort-shop/static/css/main.168c7b33.css",
+    "main.js": "/fort-shop/static/js/main.b50ca462.js",
+    "index.html": "/fort-shop/index.html",
+    "main.168c7b33.css.map": "/fort-shop/static/css/main.168c7b33.css.map",
+    "main.b50ca462.js.map": "/fort-shop/static/js/main.b50ca462.js.map"
   },
   "entrypoints": [
     "static/css/main.168c7b33.css",
