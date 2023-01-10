@@ -1,6 +1,6 @@
 {
   "name": "shop",
-  "home": "https://androsovv.github.io/fort-shop",
+  "homepage": "https://androsovv.github.io/fort-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,6 +1,11 @@
 import React from 'react';
+import {useContext} from "react";
+import {ShopContext} from "../context";
 
 const BasketItem = ({ id, name, price, quantity, removeFromBasket, incItem, decItem}) => {
+    const {example} = useContext(ShopContext);
+    console.log(example);
+
     return (
         <li className="collection-item ">{name} x{quantity} = {price * quantity } руб.
             <span className='secondary-content' onClick={() => removeFromBasket(id)}>
